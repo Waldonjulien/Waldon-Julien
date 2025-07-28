@@ -1,29 +1,78 @@
 body {
   margin: 0;
   background-color: #fdd600;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  color: black;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
+  padding-top: 10px;
   margin-left: 1em;
   margin-right: 1em;
   align-items: baseline;
-  align-self: flex-end;
+  color: black;
 }
+/****home****/
+
+.my-name {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbtack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home */
 
 a {
   text-decoration: none;
   align-content: flex-end;
+  padding: 10px;
+  color: black;
+  font-size: 14pt;
+}
+a:hover {
+  color: blue;
 }
 
+.my-quote1 {
+  align-content: flex-start;
+  font-size: 16pt;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-quote2 {
+  align-content: flex-start;
+  font-size: 16pt;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .quote {
   display: flex;
-  background-color: ;
-  align-content: space-evenly;
-  width: 400px;
-  height: 75px;
+  flex-direction: column;
+  align-content: center;
+  width: 300px;
+  height: 250px;
+  font-size: 16px;
 }
 
 .img {
@@ -34,6 +83,7 @@ a {
 /* Contact page */
 .contact-head {
   font-size: 20pt;
+  font-weight: bold;
 }
 
 .contact-card {
@@ -48,6 +98,9 @@ ul {
 }
 li {
   margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -66,6 +119,8 @@ label {
   margin-top: 1em;
   height: 50px;
   background-color: bisque;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 button {
@@ -75,6 +130,14 @@ button {
   font-size: 15px;
   font-weight: bold;
 }
+
+button:hover {
+  background-color: #e34e55;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+}
 .thumbtack {
   display: flex;
   justify-content: center;
@@ -83,7 +146,8 @@ button {
   height: 75px;
 }
 
-/* portfolio */
+/********** portfolio **************/
+
 .portfolio-head {
   display: flex;
   flex-direction: column;
@@ -91,21 +155,32 @@ button {
 }
 .project1 {
   background-color: bisque;
-  width: 500px;
-  height: 230px;
-  margin: 1em;
+  width: 600px;
+  height: 260px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
 }
 
 .project2 {
-  width: 500px;
-  height: 230px;
+  width: 600px;
+  height: 260px;
   background-color: bisque;
   margin: 1em;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
 }
 
-.project3 {
-  width: 500px;
-  height: 230px;
+/*** About me ********/
+
+.about-me {
   background-color: bisque;
-  margin: 1em;
+  width: 800px;
+  height: 250px;
+  padding: 10px;
 }
